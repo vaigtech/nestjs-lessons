@@ -13,7 +13,7 @@ exports.config = {
   /**
    * Your New Relic license key.
    */
-  license_key: 'eu01xxc508b03a015eb6b86af56382c8FFFFNRAL',
+  license_key: 'eu01xx3aa9bafde2d94f610b69e7436bFFFFNRAL',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
@@ -28,6 +28,11 @@ exports.config = {
    * attributes include/exclude lists.
    */
   allow_all_headers: true,
+  application_logging: {
+    forwarding: {
+      enabled: true,
+    },
+  },
   attributes: {
     /**
      * Prefix of attributes to exclude from all destinations. Allows * as wildcard

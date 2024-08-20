@@ -1,5 +1,5 @@
 import { createLogger, format, transports, addColors } from 'winston';
-
+require('newrelic');
 // Define custom logging levels and colors
 const customLevels = {
   levels: {
