@@ -5,7 +5,6 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { GlobalExceptionFilter } from './filter/GlobalExceptionFilter';
 import { WinstonModule } from 'nest-winston';
 import { loggerInstance } from './logger/Winston.logger';
-import { Logger } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
