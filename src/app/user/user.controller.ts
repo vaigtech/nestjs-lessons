@@ -24,7 +24,7 @@ export class UserController {
   }
   @Get('test1')
   test1() {
-    throw new NotFoundException('dd');
+    throw new NotFoundException('dd777');
   }
   @Get('test2')
   test2() {

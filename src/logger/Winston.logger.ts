@@ -1,5 +1,8 @@
 import { createLogger, format, transports, addColors } from 'winston';
 require('newrelic');
+const winston = require('winston');
+const newrelicFormatter = require('@newrelic/winston-enricher')(winston);
+
 // Define custom logging levels and colors
 const customLevels = {
   levels: {
@@ -33,6 +36,7 @@ const customFormat = format.combine(
       Object.keys(meta).length ? ` ${JSON.stringify(meta, null, 2)}` : ''
     }`;
   }),
+  winston.format.label({ label: 'test7777' }),
 );
 
 // Transport options
