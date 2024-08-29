@@ -36,7 +36,7 @@ const customFormat = format.combine(
       Object.keys(meta).length ? ` ${JSON.stringify(meta, null, 2)}` : ''
     }`;
   }),
-  winston.format.label({ label: 'test7777' }),
+  winston.format.label({ label: 'test projects' }),
 );
 
 // Transport options

@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Nestjs Application'],
+  app_name: ['Nestjs Application for test'],
   /**
    * Your New Relic license key.
    */

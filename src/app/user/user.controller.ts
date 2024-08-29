@@ -44,4 +44,8 @@ export class UserController {
       description: 'Some error description',
     });
   }
+  @Get('test5')
+  test5() {
+    throw new BadRequestException('Babken');
+  }
 }
